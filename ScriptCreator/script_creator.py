@@ -130,7 +130,7 @@ def generate_queries(npcEntry, spells_casted):
 		query = ( "(" + npcEntry + ', ' + str(idx) + ', ' + minStart + ', ' + maxStart + ', ' +
 					'repeatMin' + ', ' + "repeatMax" + ', ' + '1000' + ', ' + spellId + ', ' +
 					'eventCheck' + ', ' + "eventFlags" + ', ' + "attack_dist" + ', ' + '0' + ', ' + 
-					npcName + " - " + spellName + ")\n" )
+					"\"" + npcName + " - " + spellName + "\"" + "),\n" )
 
 		queries.append(query)
 
@@ -143,6 +143,9 @@ def generate_queries(npcEntry, spells_casted):
 							"WHERE `entry` = " + npcEntry + ";\n\n")
 
 	queries.append(queryCreatureTemplate)
+
+	if idx == 0:
+		queries = []
 
 	return queries	
 
