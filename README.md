@@ -1,5 +1,5 @@
 # DungeonDataInfo
-WoW Addon for get useful info about npcs in dungeons and raids.
+WoW Addon to get useful info about npcs in dungeons and raids.
 
 Basic addon that get the hp values and the difficulty of the dungeon/raid where they are used when you see the tooltip of Npcs in game.
 
