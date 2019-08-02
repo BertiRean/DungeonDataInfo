@@ -71,6 +71,10 @@ def get_trash_data_by_map(mapId):
 	file = open(filename, "a+")
 
 	for mapInfo, npcs in spells_by_map.items():
+
+		if mapInfo != mapId:
+			continue
+
 		for npcId, spells in npcs.items():
 			queries = generate_queries(npcId, spells)
 
@@ -155,7 +159,7 @@ def load_database(inFile):
 	if inFile == "":
 		return
 
-	file = open(inFile, "r")
+	file = open(inFile, "r", encoding="utf8")
 
 	readNames = False
 	hasTimers = False
