@@ -1,5 +1,5 @@
-## Interface: 80200
+## Interface: 90002
 ## Title: DungeonDataInfo
 ## Notes: Allow get info about npcs in dungeons, like Hp, Level, Power and Spells Casted
-## SavedVariables: DungeonDataInfoData
+## SavedVariables: DungeonDataInfoData DungeonSpellTimers
 DungeonDataInfo.lua
